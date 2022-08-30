@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".ui.lmdc.LmdcFragment" android:background="@color/transpa">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:weightSum="1">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black" android:weightSum="1" android:id="@+id/lmdcInit">
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/black"
+                        android:weightSum="1"
+                >
+                    <ImageView
+                            android:src="@drawable/cm"
+                            android:layout_width="match_parent"
+                            app:cardCornerRadius="4dp"
+
+                            android:layout_height="match_parent" android:id="@+id/imageViewH"
+                            android:layout_weight="0.3"/>
+                    <ImageView
+                            android:src="@android:drawable/ic_dialog_info"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/lmdcinfo"
+                            android:layout_weight="0.3"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/Llh"
+                android:layout_width="match_parent"
+                android:weightSum="1"
+
+                android:layout_height="match_parent"
+                android:padding="10dp" android:background="@drawable/lmdcwp">
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.2"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" android:id="@+id/lmdcresto">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/black"
+                        android:weightSum="1"
+                >
+                    <TextView
+                            android:text="Restaurant"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:layout_weight="0.65"
+                            android:textColor="@color/white" android:gravity="center|center_horizontal|fill_horizontal"
+                            android:textAlignment="center"/>
+                    <android.widget.ImageView
+                            android:foreground="@drawable/rounded_fg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitXY"
+
+                            android:layout_weight="0.35" android:src="@drawable/a2"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="0.2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" android:id="@+id/lmdcbar">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/black"
+                        android:weightSum="1"
+                >
+                    <TextView
+                            android:text="Venues bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/textViewS"
+                            android:layout_weight="0.65"
+                            android:textColor="@color/white" android:gravity="center|center_horizontal|fill_horizontal"
+                            android:textAlignment="center"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/imageViewE"
+                            android:scaleType="centerCrop"
+
+                            android:layout_weight="0.35" android:src="@drawable/a3"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" android:background="@color/black"
+                    android:layout_weight="0.2" android:id="@+id/lmdcevent">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/black"
+                        android:weightSum="1"
+                >
+                    <TextView
+                            android:text="Évenement"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/textViewEvent"
+                            android:layout_weight="0.65"
+                            android:textColor="@color/white" android:gravity="center|center_horizontal|fill_horizontal"
+                            android:textAlignment="center"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:foreground="@drawable/rounded_fg"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+
+                            android:layout_weight="0.35" android:src="@drawable/a1" android:background="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" android:background="@color/transpa"
+                    android:layout_weight="0.2" app:cardBackgroundColor="@color/transpa">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+
+                        android:weightSum="1"
+                        android:layout_height="wrap_content" android:background="@color/transpa">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="0.49"
+                            android:weightSum="1"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:paddingEnd="3dp"
+                            android:background="@color/transpa" android:id="@+id/lmdcreserv">
+                        <ImageView
+                                android:src="@drawable/a4"
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:foreground="@drawable/rounded_fg"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent" android:id="@+id/imageView"
+                                android:background="@color/black"/>
+                        <TextView
+                                android:text="Réservation"
+                                android:layout_width="match_parent"
+                                android:layout_weight="0.5"
+
+                                android:layout_height="wrap_content" android:id="@+id/textView4"
+                                android:textColor="@color/white" android:textAlignment="center"
+                                android:background="@color/black"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:weightSum="1"
+                            android:layout_weight="0.49"
+
+
+                            android:layout_height="wrap_content" android:background="@color/transpa"
+                            android:id="@+id/lmdcshop">
+
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:scaleType="centerCrop"
+                                android:foreground="@drawable/rounded_fg"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/a4"
+
+                                android:id="@+id/imageView5"/>
+                        <TextView
+                                android:text="Boutique"
+                                android:layout_width="match_parent"
+                                android:layout_weight="0.5"
+
+                                android:layout_height="wrap_content" android:id="@+id/textView5"
+                                android:textColor="@color/white" android:textAlignment="center"
+                                android:background="@color/black"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" android:background="@color/black"
+                    android:layout_weight="0.2" android:id="@+id/lmdccontact">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@color/black"
+                        android:weightSum="1"
+                >
+                    <TextView
+                            android:text="Contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:id="@+id/textContact"
+                            android:layout_weight="0.65"
+                            android:textColor="@color/white" android:gravity="center|center_horizontal|fill_horizontal"
+                            android:textAlignment="center"/>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:foreground="@drawable/rounded_fg"
+                            android:layout_weight="0.35" android:src="@drawable/lmdccontact"
+                            android:background="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
